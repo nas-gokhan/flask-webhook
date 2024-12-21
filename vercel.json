@@ -1,24 +1,16 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "webhook_server.py",
-      "use": "@vercel/python"
-    }
-  ],
-{
   "routes": [
     {
       "src": "/webhook",
       "methods": ["POST"],
-      "dest": "/webhook",
+      "dest": "/webhook_server.py",
       "headers": {
-        "x-vercel-cache": "no-cache"
+        "Cache-Control": "no-cache"
+      },
+      "override": {
+        "auth": false
       }
-    }
-  ]
-}
-
     }
   ]
 }
