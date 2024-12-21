@@ -7,9 +7,6 @@
       "dest": "/webhook_server.py",
       "headers": {
         "Cache-Control": "no-cache"
-      },
-      "override": {
-        "auth": false
       }
     }
   ]
