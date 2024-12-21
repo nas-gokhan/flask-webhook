@@ -1,12 +1,11 @@
 {
-  "version": 2,
   "routes": [
     {
       "src": "/webhook",
-      "methods": ["POST"],
       "dest": "/webhook_server.py",
+      "methods": ["POST"],
       "headers": {
-        "Cache-Control": "no-cache"
+        "Content-Type": "application/json"
       }
     }
   ]
