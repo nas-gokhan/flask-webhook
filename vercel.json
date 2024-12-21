@@ -5,7 +5,7 @@
       "dest": "/webhook_server.py",
       "methods": ["POST"],
       "headers": {
-        "Content-Type": "application/json"
+        "Access-Control-Allow-Origin": "*"
       }
     }
   ]
