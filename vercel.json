@@ -6,7 +6,13 @@
       "methods": ["POST"],
       "headers": {
         "Access-Control-Allow-Origin": "*"
-      }
+      },
+      "override": true
     }
-  ]
+  ],
+  "functions": {
+    "webhook_server.py": {
+      "runtime": "python3.9"
+    }
+  }
 }
